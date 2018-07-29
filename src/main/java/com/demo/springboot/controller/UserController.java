@@ -21,9 +21,6 @@ public class UserController {
 
         IgrsUser igrsUser = igrsUserService.getUserByName(userName);
         if (igrsUser != null) {
-            logger.debug("user: {}, password: {}", igrsUser.getUser(), igrsUser.getPassword());
-        }
-        if (igrsUser != null) {
             if (userName.equals(igrsUser.getUser()) && password.equals(igrsUser.getPassword())) {
                 jsonResult.put("result", "SUCCESS");
             }

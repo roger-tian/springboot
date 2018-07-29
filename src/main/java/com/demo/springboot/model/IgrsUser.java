@@ -1,6 +1,8 @@
 package com.demo.springboot.model;
 
-public class IgrsUser {
+import java.io.Serializable;
+
+public class IgrsUser implements Serializable {
     public Long getId() {
         return id;
     }
